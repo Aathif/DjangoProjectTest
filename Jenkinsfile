@@ -2,14 +2,17 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Source') {
             steps {
-                echo 'Hello World'
+                echo 'Cloning git repo'
+                git branch: 'main', poll: false, url: 'https://github.com/Aathif/DjangoProjectTest'
             }
         }
-        stage('Hello Again') {
+        stage('Build') {
             steps {
-                echo 'Hello World'
+                echo 'Starting build Process'
+                sh 'virtualenv -p python3 myenv'
+                sh 'ls'
             }
         }
     }
