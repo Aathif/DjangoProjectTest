@@ -1,5 +1,5 @@
 import logging
-from django.shortcuts import render, redirect, reverse, render_to_response
+from django.shortcuts import render, redirect, reverse
 from django.http import HttpResponseRedirect,HttpResponse, HttpResponseForbidden
 from .models import TaskForm, Task, UsernameForm, Username
 from django.template import RequestContext

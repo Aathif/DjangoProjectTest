@@ -31,7 +31,6 @@ pluggy==0.6.0
 psycopg2==2.7.4
 py==1.5.2
 pycairo==1.16.2
-pycrypto
 pycurl==7.43.0.5
 pygobject==3.26.1
 pyOpenSSL==17.5.0
